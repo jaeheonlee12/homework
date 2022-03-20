@@ -44,6 +44,10 @@
 
         function quest3() {
             // 여기에 스크립트를 작성하세요
+            num1 = prompt("첫 번째 숫자를 입력하세요")
+            oper = prompt("연산자를 입력하세요")
+            num2 = prompt("두 번째 숫자를 입력하세요")
+        
 
             var answer = operate(num1, oper, num2); // 반드시 이 코드를 사용하세요
             console.log("정답은 %d입니다.", answer);
@@ -53,6 +57,24 @@
             
             // 여기에 스크립트를 작성하세요
             // 단, 반드시 switch 문을 활용하세요
+            switch(oper){
+                case "+":
+                    answer = num1 + num2
+                    return answer
+                    break
+                case "-":
+                    answer = num1 - num2
+                    return answer
+                    break
+                case "/":
+                    answer = parseInt(num1 / num2)
+                    return answer
+                    break
+                case "*":
+                    answer = num1 * num2
+                    return answer
+                    break
+            }
 
         }
 
