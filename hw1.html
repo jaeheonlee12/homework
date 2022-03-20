@@ -81,7 +81,68 @@
         function quest4() {
 
              // 여기에 스크립트를 작성하세요
+             user = prompt("가위 바위 보!")
+             computer = Math.floor(Math.random() * 3)
+             result = "사용자 결과"
+             computer_result = "컴퓨터 결과"
+
+
+             win = "사용자 승리"
+             draw = "무승부"
+             lose = "컴퓨터 승리"
              
+
+            
+             if (user == "가위"){
+                 if (computer == 0){
+                     result = draw
+                 }
+                 else if (computer == 1){
+                     result = lose
+                 }
+                 else {
+                     result = win
+                 }
+                 }
+            else if (user == "바위"){
+                if (computer == 0){
+                    result = win
+                }
+                else if (computer == 1){
+                    result = draw
+                }
+                else {
+                    result = lose
+                }
+                
+            }
+            else {
+                if (computer == 0){
+                    result = lose
+                }
+                else if (computer == 1){
+                    result = win
+                }
+                else 
+                    result = draw
+                
+            }
+             
+
+             if (computer == 0){
+                 computer_result = "컴퓨터: 가위"
+             }
+             else if (computer == 1){
+                 computer_result = "컴퓨터: 바위"
+             }
+             else {
+                 computer_result = "컴퓨터: 보"
+             }
+             console.log(computer_result)
+             console.log(result)
+
+
+
         }
 
         function quest5() {
@@ -99,6 +160,7 @@
         function quest6() {
             
             // 여기에 스크립트를 작성하세요
+            
         }
 
         function quest7(){
