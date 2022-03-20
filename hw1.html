@@ -151,7 +151,11 @@
         }
 
         function myReverse(str) {
-            
+            reverse_str = ''
+            for (i=str.length-1;i >= 0;i--){
+                reverse_str += str[i]
+            }
+            return reverse_str
             // 여기에 스크립트를 작성하세요
             // 반드시 반복문을 이용하여 str의 내용을 뒤집으세요
 
