@@ -165,6 +165,21 @@
             
             // 여기에 스크립트를 작성하세요
             
+            function repeat(){
+                user = prompt("숫자를 입력하세요:")
+                if (user % 2 == 0){
+                    repeat()
+                    }
+                else if (user < 0){
+                    console.log("끝!")
+                     }
+                else {
+                    console.log(user + "를 입력하셨네요.")
+                    repeat()
+                
+                    }
+            }
+            repeat()
         }
 
         function quest7(){
