@@ -180,7 +180,13 @@
         }
 
         function quest7(){
-            
+            user = prompt("문자열을 입력해주세요")
+            str = user.split(" ")
+            var new_str = ""
+            for (i= 0; i <str.length; i ++){
+                new_str += str[i][0]           
+             }
+            console.log(new_str)
             // 여기에 스크립트를 작성하세요
 
         }
