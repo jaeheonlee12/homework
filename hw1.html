@@ -164,22 +164,19 @@
         function quest6() {
             
             // 여기에 스크립트를 작성하세요
-            
-            function repeat(){
-                user = prompt("숫자를 입력하세요:")
-                if (user % 2 == 0){
-                    repeat()
-                    }
-                else if (user < 0){
-                    console.log("끝!")
-                     }
+            user = prompt("숫자를 입력하세요:")
+            while (user >= 0){
+                if (user % 2 == 1){
+                    console.log(user+"를 입력하셨네요.")
+                    user = prompt("숫자를 입력하세요:")
+                }
                 else {
-                    console.log(user + "를 입력하셨네요.")
-                    repeat()
-                
-                    }
+                    user = prompt("숫자를 입력하세요")
+                }
+
             }
-            repeat()
+            console.log("끝!")
+            
         }
 
         function quest7(){
