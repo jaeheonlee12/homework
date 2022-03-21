@@ -211,9 +211,32 @@
 
         function quest9(str){
             
+            var new_str = {}
+            for (i in str){
+                if (str[i] == " " || str[i] == "." || str[i] == ";"){
+                    continue
+                }
+                else if (str[i] in new_str){
+                    new_str[str[i]] += 1
+                }
+
+                else {
+                    
+                    new_str[str[i]] = 1 
+                }
+
+
+                }
+               
+                console.log(new_str)
+                
+            }
+
+            
+            
             // 여기에 스크립트를 작성하세요    
                         
-        }
+        
 
     </script>
 </head>
